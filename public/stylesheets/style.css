@@ -1,0 +1,119 @@
+:root {
+  --primary: #7898FF;
+  --secondary: #8E64C5;
+  --app-grey: #F2F2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F6F6F6;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+}
+
+form {
+  background-color: white;
+  box-shadow: 0 5px 5px lightgrey;
+  position: relative;
+  max-width: 26em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+  padding: 1em 2.5em;
+
+  font-size: 1.2em;
+}
+
+form:after {
+  position: absolute;
+  content: '';
+  width: .7em;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(var(--primary), var(--secondary));
+}
+
+input {
+  width: 100%;
+  padding: .4em .5em;
+  background-color: var(--app-grey);
+  border: 1px solid var(--app-grey);
+  border-radius: .2em;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+
+label {
+  width: 100%;
+  font-weight: 300;
+  margin-bottom: -.1em;
+  margin-top: 1em;
+  font-size: .8em;
+}
+
+button {
+  padding: .5em 3em;
+  background-color: var(--primary);
+  color: white;
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.form-header {
+
+  font-size: 2em;
+}
+
+h1 {
+  font-weight: 300;
+  margin: .5em 0;
+}
+
+.left {
+  width: 50%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left img {
+  width: 60%;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
